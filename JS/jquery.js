@@ -1,7 +1,7 @@
 var movingText = document.getElementById('quienesSomos');
 window.onscroll = function() {
     var scrollPositionTop = window.scrollY;
-    var scrollPositionBot = window.scrollY + window.pageYOffset;
+    var scrollPositionBot = window.scrollY + window.scrollY;
     var containerTop = movingText.offsetTop;
     var containerHeight = movingText.offsetHeight
 

@@ -109,7 +109,22 @@
                                         Un <strong>equipo</strong> que viene de la <strong>calle</strong>, comprometido con los <strong>RESULTADOS de nuestros CLIENTES</strong>, dispuesto a brindar acompañamiento continuo <strong>hasta que se alcancen las METAS</strong>.
                                     </p>
                                 </div>
-                                <script src="jquery.js"></script>
+                                <script>
+                                    var movingText = document.getElementById('quienesSomos');
+                                    window.onscroll = function() {
+                                        var scrollPositionTop = window.scrollY;
+                                        var scrollPositionBot = window.scrollY + window.pageYOffset;
+                                        var containerTop = movingText.offsetTop;
+                                        var containerHeight = movingText.offsetHeight
+
+                                        if (scrollPositionBot > containerTop && scrollPositionTop < containerTop + containerHeight) {
+                                            movingText.style = "transition: transform 1.5s, ease 1s; transform: translate3d(0px, 0px, 0px)";
+                                        } else {
+                                            movingText.style = "transition: transform 1.5s, ease 1s;  transform: translate3d(150px, 0px, 0px)";
+                                            movingText.style.opacity = "0";
+                                        }
+                                    };
+                                </script>
                                 <a href="C:/Users/cpari/OneDrive/Escritorio/Pixales%20code/QuienesSomos.html" class="button w-inline-block">
                                     <div>Conócenos!</div>
                                 </a>
