@@ -13,13 +13,15 @@ window.onscroll = function() {
     }
 };
 
-entramouse = function(){
+entramouse1 = function(){
+    var title = document.getElementById('problema');
     var movingText = document.getElementById('pc1');
+    title.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
     movingText.style.display = "block";
-    movingText.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
 }
-salemouse = function(){
+salemouse1 = function(){
+    var title = document.getElementById('problema');
     var movingText = document.getElementById('pc1');
-    movingText.style = 'transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s';
     movingText.style.display = "none";
+    title.style = 'transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s';
 }
