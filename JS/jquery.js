@@ -20,6 +20,6 @@ entramouse = function(){
 }
 salemouse = function(){
     var movingText = document.getElementById('pc1');
-    movingText.style.display = "none";
     movingText.style = 'transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s';
+    movingText.style.display = "none";
 }
