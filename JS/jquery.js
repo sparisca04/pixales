@@ -8,7 +8,7 @@ window.onscroll = function() {
     if (scrollPositionBot > containerTop && scrollPositionTop < containerTop + containerHeight) {
         movingText.style = "transition: transform 1.5s, ease 1s; transform: translate3d(0px, 0px, 0px)";
     } else {
-        movingText.style = "transition: transform 1.5s, ease 1s;  transform: translate3d(150px, 0px, 0px)";
+        movingText.style = "transition: transform 1.5s, ease 1s;  transform: translate3d(100px, 0px, 0px)";
         movingText.style.opacity = "0";
     }
 };
