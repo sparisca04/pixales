@@ -13,13 +13,13 @@ window.onscroll = function() {
     }
 };
 
-window.onmouseenter = function(){
+function enterSlide1() {
     var title = document.getElementById('problema');
     var movingText = document.getElementById('pc1');
     title.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
     movingText.style.display = "block";
 }
-window.onmouseleave = function(){
+function leaveSlide1() {
     var title = document.getElementById('problema');
     var movingText = document.getElementById('pc1');
     movingText.style.display = "none";
