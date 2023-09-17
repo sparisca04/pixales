@@ -201,13 +201,15 @@ td, th {
   width: 20%;
   height: 100px;
   padding: 20px;
+  flex: 1;
 }
 /* Estilos para el contenedor */
 .container {
-padding-left: 20px;    
+padding-left: 20px;
 display: flex;
 flex-wrap: wrap;
 gap: 20px;
+height: 230px;
 }
 
 /* Estilos para el cuadro de texto */
@@ -234,7 +236,7 @@ height: 85%;
 .circulo {
 position: relative;
 left: -40px; /* Ajusta la posición del círculo */
-top: -200%;
+top: -450%;
 width: 110px; /* Tamaño del círculo */
 height: 110px;
 background-color: white;
@@ -244,15 +246,17 @@ overflow: visible;
 transition: top 400ms, left 400ms, width 400ms, height 400ms;
 }
 .circulo-grande {
-position: absolute;
-width: 200px; /* Tamaño del círculo */
-height: 200px;
-background-color: white;
-border: 2px solid #407271;
-border-radius: 50%;
-padding: 20px;
-overflow: visible;
-transition: width 400ms, height 400ms;
+  position: absolute;
+  max-width: 200px; /* Tamaño del círculo */
+  width: 20%;
+  height: 35%;
+  max-height: 200px;
+  background-color: white;
+  border: 2px solid #407271;
+  border-radius: 50%;
+  padding: 20px;
+  overflow: visible;
+  transition: width 400ms, height 400ms;
 }
 /* Estilos para la imagen dentro del círculo */
 .circulo-img {
