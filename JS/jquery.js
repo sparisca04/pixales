@@ -13,41 +13,28 @@ window.onscroll = function() {
     }
 };
 
-function enterSlide1() {
-    var title = document.getElementById('problema');
-    var movingText = document.getElementById('pc1');
+function enterSlide(idTitulo, idPc) {
+    var title = document.getElementById(idTitulo);
+    var movingText = document.getElementById(idPc);
     title.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
     movingText.style.display = "block";
 }
-function leaveSlide1() {
-    var title = document.getElementById('problema');
-    var movingText = document.getElementById('pc1');
+function leaveSlide(idTitulo, idPc) {
+    var title = document.getElementById(idTitulo);
+    var movingText = document.getElementById(idPc);
     movingText.style.display = "none";
     title.style = 'transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s';
 }
 
-function enterSlide2() {
-    var title = document.getElementById('oportunidad');
-    var movingText = document.getElementById('pc2');
-    title.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
-    movingText.style.display = "block";
+function apareceTexto(idCirculo, idCuadro){
+    var circulo = document.getElementById(idCirculo);
+    var cuadro = document.getElementById(idCuadro);
+    circulo.className = "circulo";
+    cuadro.style.display = "block";
 }
-function leaveSlide2() {
-    var title = document.getElementById('oportunidad');
-    var movingText = document.getElementById('pc2');
-    movingText.style.display = "none";
-    title.style = 'transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s';
-}
-
-function enterSlide3() {
-    var title = document.getElementById('solucion');
-    var movingText = document.getElementById('pc3');
-    title.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
-    movingText.style.display = "block";
-}
-function leaveSlide3() {
-    var title = document.getElementById('solucion');
-    var movingText = document.getElementById('pc3');
-    movingText.style.display = "none";
-    title.style = 'transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s';
+function desapareceTexto(idCirculo, idCuadro){
+    var circulo = document.getElementById(idCirculo);
+    var cuadro = document.getElementById(idCuadro);
+    circulo.className = "circulo-grande";
+    cuadro.style.display = "none";
 }

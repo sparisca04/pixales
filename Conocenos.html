@@ -60,39 +60,46 @@
                 </head>
                 <body>
                     <div class="container">
-                        <div class="cuadro">
-                            <div class="circulo-grande">
+                        <div class="bloque" onmouseenter="apareceTexto('circulo1', 'cuadro1')" onmouseleave="desapareceTexto('circulo1', 'cuadro1')">
+                            <div id="cuadro1"class="cuadro" style="display: none">
+                                <div class="rectangulo">
+                                <p>Texto del cuadro 1</p>
+                                </div>
+                            </div>
+                            <div id="circulo1" class="circulo-grande">
                                 <img src="tu-imagen-1.jpg" alt="Imagen 1">
                             </div>
-                            <div class="rectangulo" style="display: none;">
-                                <p>Texto del cuadro 1</p>
-                            </div>
                         </div>
-                        <div class="cuadro">
-                            <div class="circulo">
+                        <div class="bloque" onmouseenter="apareceTexto('circulo2', 'cuadro2')" onmouseleave="desapareceTexto('circulo2', 'cuadro2')">
+                            <div id="cuadro2" class="cuadro" style="display: none">
+                                <div class="rectangulo">
+                                    <p>Texto del cuadro 2</p>
+                                </div>
+                            </div>
+                            <div id="circulo2" class="circulo-grande">
                                 <img src="tu-imagen-2.jpg" alt="Imagen 2">
                             </div>
-                            <div class="rectangulo">
-                                <p>Texto del cuadro 2</p>
-                            </div>
                         </div>
-                        <div class="container">
-                            <div class="cuadro">
-                                <div class="circulo">
-                                    <img src="tu-imagen-3.jpg" alt="Imagen 1">
-                                </div>
+                        <div class="bloque" onmouseenter="apareceTexto('circulo3', 'cuadro3')" onmouseleave="desapareceTexto('circulo3', 'cuadro3')">
+                            <div id="cuadro3" class="cuadro" style="display: none">
                                 <div class="rectangulo">
                                     <p>Texto del cuadro 3</p>
                                 </div>
                             </div>
-                            <div class="cuadro">
-                                <div class="circulo">
-                                    <img src="tu-imagen-4.jpg" alt="Imagen 2">
-                                </div>
+                            <div id="circulo3" class="circulo-grande">
+                                <img src="tu-imagen-3.jpg" alt="Imagen 1">
+                            </div>
+                        </div>
+                        <div class="bloque" onmouseenter="apareceTexto('circulo4', 'cuadro4')" onmouseleave="desapareceTexto('circulo4', 'cuadro4')">
+                            <div id="cuadro4" class="cuadro" style="display: none">
                                 <div class="rectangulo">
                                     <p>Texto del cuadro 4</p>
                                 </div>
                             </div>
+                            <div id="circulo4" class="circulo-grande">
+                                <img src="tu-imagen-4.jpg" alt="Imagen 2">
+                            </div>
+                        </div>
                     </div>
                 </body>
             </div>
