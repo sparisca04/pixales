@@ -234,7 +234,7 @@ height: 85%;
 .circulo {
 position: relative;
 left: -40px; /* Ajusta la posición del círculo */
-top: -100%;
+top: -200%;
 width: 110px; /* Tamaño del círculo */
 height: 110px;
 background-color: white;
