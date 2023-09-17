@@ -229,14 +229,14 @@ border: 1px solid #407271;
 border-radius: 15px;
 padding: 10px;
 color: #407271;
-height: 85%;
+height: 100%;
 }
 
 /* Estilos para el círculo */
 .circulo {
   position: relative;
   left: -40px; /* Ajusta la posición del círculo */
-  top: -200%;
+  top: -450%;
   width: 110px; /* Tamaño del círculo */
   height: 110px;
   background-color: white;
