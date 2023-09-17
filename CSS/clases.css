@@ -204,7 +204,7 @@ td, th {
   flex: 1;
 }
 /* Estilos para el contenedor */
-.container {
+.contenedor {
 padding: 20px;
 display: flex;
 flex-wrap: wrap;
