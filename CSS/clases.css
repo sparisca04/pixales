@@ -2758,7 +2758,22 @@ figcaption {
   display: flex;
   position: static;
 }
-
+.intro-header2 {
+  height: 550px;
+  color: #fff;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, .64), rgba(0, 0, 0, .64)), url("https://github.com/sparisca04/pixales/blob/main/Imagenes/conocenos.jpg?raw=true");
+  background-position: 0 0, 50% 0;
+  background-repeat: repeat, repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: flex;
+  position: static;
+}
 .intro-header.cc-subpage {
   height: 480px;
   color: #fff;
