@@ -2601,7 +2601,7 @@ figcaption {
 }
 
 .navigation-wrap {
-  width: 100%;
+  width: 80%;
   min-height: 80px;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
