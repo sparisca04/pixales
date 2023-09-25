@@ -2601,7 +2601,7 @@ figcaption {
 }
 
 .navigation-wrap {
-  width: 80%;
+  width: 90%;
   min-height: 80px;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -3705,6 +3705,7 @@ figcaption {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   .navigation {
