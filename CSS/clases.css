@@ -205,7 +205,7 @@ td, th {
 }
 /* Estilos para el contenedor */
 .contenedor {
-padding: 0px;
+padding-left: 100px;
 display: flex;
 flex-wrap: wrap;
 gap: 20px;
@@ -237,8 +237,8 @@ height: 100%;
   position: relative;
   left: -40px; /* Ajusta la posición del círculo */
   top: -450%;
-  width: 110px; /* Tamaño del círculo */
-  height: 110px;
+  width: 6vw; /* Tamaño del círculo */
+  height: 6vw;
   background-color: white;
   border: 2px solid #214545;
   border-radius: 50%;
@@ -247,8 +247,8 @@ height: 100%;
   }
   .circulo-grande {
   position: absolute;
-  width: 200px; /* Tamaño del círculo */
-  height: 200px;
+  width: 15vw; /* Tamaño del círculo */
+  height: 15vw;
   background-color: white;
   border: 2px solid #214545;
   border-radius: 50%;
