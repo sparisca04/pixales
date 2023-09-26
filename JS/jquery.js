@@ -29,12 +29,12 @@ function leaveSlide(idTitulo, idPc) {
 function apareceTexto(idCirculo, idCuadro){
     var circulo = document.getElementById(idCirculo);
     var cuadro = document.getElementById(idCuadro);
-    circulo.style = "transform: translate(-50px, -50px) scale(0.6); transition: transform 500ms ease;";
+    circulo.style = "transform: translate3d(-70px, -70px, 100px) scale(0.6); transition: transform 500ms ease;";
     cuadro.style.display = "block";
 }
 function desapareceTexto(idCirculo, idCuadro){
     var circulo = document.getElementById(idCirculo);
     var cuadro = document.getElementById(idCuadro);
-    circulo.style = "transform: translate(0px, 0px) scale(1); transition: transform 500ms ease;";
+    circulo.style = "transform: translate3d(0px, 0px, 0px) scale(1); transition: transform 500ms ease;";
     cuadro.style.display = "none";
 }
