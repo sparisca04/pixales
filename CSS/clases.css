@@ -233,18 +233,6 @@ height: 100%;
 }
 
 /* Estilos para el círculo */
-.circulo {
-  position: relative;
-  left: -40px; /* Ajusta la posición del círculo */
-  top: -450%;
-  width: 6vw; /* Tamaño del círculo */
-  height: 6vw;
-  background-color: white;
-  border: 2px solid #214545;
-  border-radius: 50%;
-  overflow: visible;
-  transition: top 400ms, left 400ms, width 400ms, height 400ms;
-  }
   .circulo-grande {
   position: absolute;
   width: 15vw; /* Tamaño del círculo */
