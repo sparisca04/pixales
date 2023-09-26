@@ -205,7 +205,7 @@ td, th {
 }
 /* Estilos para el contenedor */
 .contenedor {
-padding-left: 100px;
+padding-left: 3vw;
 display: flex;
 flex-wrap: wrap;
 gap: 20px;
@@ -248,7 +248,11 @@ height: 100%;
   .circulo-grande {
   position: absolute;
   width: 15vw; /* Tamaño del círculo */
+  max-width: 200px;
+  min-width: 150px;
   height: 15vw;
+  max-height: 200px;
+  min-height: 150px;
   background-color: white;
   border: 2px solid #214545;
   border-radius: 50%;
