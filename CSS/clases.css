@@ -233,7 +233,7 @@ height: 100%;
 }
 
 /* Estilos para el círculo */
-  .circulo-grande {
+.circulo-grande {
   position: absolute;
   width: 15vw; /* Tamaño del círculo */
   max-width: 200px;
@@ -246,8 +246,9 @@ height: 100%;
   border-radius: 50%;
   padding: 20px;
   overflow: visible;
+  z-index: 1;
   transition: width 400ms, height 400ms;
-  }
+}
 /* Estilos para la imagen dentro del círculo */
 .circulo-img {
 max-width: 100%;
