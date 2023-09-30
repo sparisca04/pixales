@@ -903,7 +903,7 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
-  .block{
+  .bloque{
     width: 40%;
   }
 
