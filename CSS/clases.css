@@ -208,13 +208,15 @@ td, th {
   display: flex;
 }
 .contenedor1 {
-padding-left: 3vw;
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-height: 230px;
+  width: 50%;
+  padding-left: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 230px;
 }
 .contenedor2 {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -915,8 +917,13 @@ textarea.w-input, textarea.w-select {
   .contenedor{
     flex-direction: column;
   }
+  .contenedor1{
+    width: 100%;
+    padding-left: 5vw;
+  }
   .contenedor2{
-    padding-left: 3vw;
+    width: 100%;
+    padding-left: 5vw;
   }
   .bloque{
     width: 40%;
