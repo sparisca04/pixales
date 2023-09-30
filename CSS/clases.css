@@ -903,6 +903,10 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  .block{
+    width: 40%;
+  }
+
   .w-container {
     max-width: 728px;
   }
