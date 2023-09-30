@@ -205,11 +205,20 @@ td, th {
 }
 /* Estilos para el contenedor */
 .contenedor {
+  display: flex;
+}
+.contenedor1 {
 padding-left: 3vw;
 display: flex;
 flex-wrap: wrap;
 gap: 20px;
 height: 230px;
+}
+.contenedor2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 230px;
 }
 
 /* Estilos para el cuadro de texto */
@@ -903,6 +912,12 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  .contenedor{
+    flex-direction: column;
+  }
+  .contenedor2{
+    padding-left: 3vw;
+  }
   .bloque{
     width: 40%;
   }
