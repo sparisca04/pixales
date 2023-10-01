@@ -311,11 +311,11 @@ border-radius: 50%;
   border-radius: 5px;
 }
 .w-icon-slider-right:before {
-  content: "î˜€";
+  content: "►";
 }
 
 .w-icon-slider-left:before {
-  content: "î˜";
+  content: "◄";
 }
 
 .w-icon-nav-menu:before {
@@ -1428,7 +1428,7 @@ textarea.w-input, textarea.w-select {
 .w-slider-arrow-left, .w-slider-arrow-right {
   width: 80px;
   cursor: pointer;
-  color: #fff;
+  color: #6b6b6bbf;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
@@ -3530,17 +3530,19 @@ figcaption {
   border-radius: 0;
   margin-top: 155px;
   margin-left: 0;
-  padding: 0 0 0 87px;
   display: inline-block;
 }
 
 .paragraph-s {
   height: 100%;
+  line-height: 1.5;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 24px;
+  font-size: 2.3vw;
   display: block;
+  padding-left: 78px;
+  padding-right: 78px;
 }
 
 .video-2 {
@@ -3567,7 +3569,6 @@ figcaption {
   mix-blend-mode: multiply;
   margin-top: 200px;
   padding-left: 0;
-  font-size: 36px;
   display: inline-block;
 }
 
@@ -3616,7 +3617,9 @@ figcaption {
   text-align: center;
   mix-blend-mode: multiply;
   padding-top: 210px;
-  font-size: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 7vw;
   display: block;
   position: absolute;
   top: 0%;
@@ -3628,7 +3631,9 @@ figcaption {
 .text-block-3 {
   object-fit: fill;
   padding-top: 210px;
-  font-size: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 8vw;
   font-weight: 500;
   display: block;
   position: absolute;
@@ -3636,6 +3641,7 @@ figcaption {
   bottom: 0%;
   left: 0%;
   right: 0%;
+  text-align: center;
 }
 
 .container-2 {
