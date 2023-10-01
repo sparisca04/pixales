@@ -2730,6 +2730,7 @@ figcaption {
   opacity: 1;
   color: #1a1b1f;
   font-weight: 600;
+  background-color: #407271;
 }
 
 .navigation-item.w--current:hover {
@@ -2740,7 +2741,6 @@ figcaption {
 .navigation-item.w--current:active {
   opacity: .7;
   color: #32343a;
-  background-color: #407271;
 }
 
 .logo-image {
