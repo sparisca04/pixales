@@ -3696,6 +3696,7 @@ figcaption {
   color: #fff;
   margin-top: 0;
   padding-left: 50px;
+  padding-bottom: 50px;
   font-weight: 600;
 }
 
@@ -3754,6 +3755,10 @@ figcaption {
   .heading-jumbo {
     font-size: 56px;
     line-height: 70px;
+  }
+
+  .heading-3 {
+    padding: 5vw;
   }
 
   .logo-link.w--current {
