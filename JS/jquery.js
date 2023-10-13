@@ -38,3 +38,10 @@ function desapareceTexto(idCirculo, idCuadro){
     circulo.style = "transform: translate(0px, 0px) scale(1); transition: transform 500ms ease;";
     cuadro.style.display = "none";
 }
+const slider = tns({
+    container: '.slider',
+    items: 5, // Cuantas imagenes se quiere mostrar por pantalla
+    slideBy: 'page',
+    autoplay: true,
+    autoplayTimeout: 5000,
+  });

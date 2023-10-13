@@ -310,6 +310,26 @@ border-radius: 50%;
   margin-left: 10px;
   border-radius: 5px;
 }
+
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 20%; /* Display 5 images per screen */
+  height: 100%;
+  float: left;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .w-icon-slider-right:before {
   content: "►";
 }
@@ -2807,7 +2827,7 @@ figcaption {
 }
 
 .intro-header {
-  height: 550px;
+  height: 100vh;
   color: #fff;
   background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, .64), rgba(0, 0, 0, .64)), url("https://uploads-ssl.webflow.com/64cbdd69893aacb3e3a8fe68/64d11f74a337bd358278fb2d_fondo%20inicio.jpg");
@@ -2823,7 +2843,7 @@ figcaption {
   position: static;
 }
 .intro-header2 {
-  height: 550px;
+  height: 100vh;
   color: #fff;
   background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, .64), rgba(0, 0, 0, .64)), url("https://github.com/sparisca04/pixales/blob/main/Imagenes/conocenos.jpg?raw=true");
@@ -2837,6 +2857,8 @@ figcaption {
   margin-bottom: 30px;
   display: flex;
   position: static;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 .intro-header.cc-subpage {
   height: 480px;
@@ -3419,8 +3441,7 @@ figcaption {
 }
 
 .carrusel {
-  height: 58vw;
-  max-height: 450px;
+  height: 100vh;
   text-align: center;
   margin-top: -30px;
   padding-bottom: 0;
