@@ -3550,7 +3550,6 @@ figcaption {
   color: #fff;
   text-align: center;
   border-radius: 0;
-  margin-top: 155px;
   margin-left: 0;
   display: inline-block;
 }
@@ -3558,13 +3557,16 @@ figcaption {
 .paragraph-s {
   height: 100%;
   line-height: 1.5;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 2.3vw;
-  display: block;
+  display: flex;
   padding-left: 78px;
   padding-right: 78px;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .video-2 {
@@ -3589,9 +3591,9 @@ figcaption {
 
 .bold-text-3 {
   mix-blend-mode: multiply;
-  margin-top: 200px;
   padding-left: 0;
   display: inline-block;
+  text-align: center;
 }
 
 .text-block {
@@ -3636,34 +3638,37 @@ figcaption {
 }
 
 .oportunidad {
-  text-align: center;
   mix-blend-mode: multiply;
-  padding-top: 210px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 7vw;
-  display: block;
+  display: flex;
   position: absolute;
   top: 0%;
   bottom: 0%;
   left: 0%;
   right: 0%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .text-block-3 {
   object-fit: fill;
-  padding-top: 210px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 8vw;
   font-weight: 500;
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
   bottom: 0%;
   left: 0%;
   right: 0%;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .container-2 {

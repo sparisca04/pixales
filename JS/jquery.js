@@ -17,7 +17,7 @@ function enterSlide(idTitulo, idPc) {
     var title = document.getElementById(idTitulo);
     var movingText = document.getElementById(idPc);
     title.style = 'transform: translate3d(0px, -130px, 0px); transition: transform 500ms ease 0s';
-    movingText.style.display = "block";
+    movingText.style.display = "flex";
 }
 function leaveSlide(idTitulo, idPc) {
     var title = document.getElementById(idTitulo);
