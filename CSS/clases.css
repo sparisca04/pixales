@@ -3552,6 +3552,7 @@ figcaption {
   border-radius: 0;
   margin-left: 0;
   display: inline-block;
+  margin-top: 100px;
 }
 
 .paragraph-s {
@@ -3594,6 +3595,7 @@ figcaption {
   padding-left: 0;
   display: inline-block;
   text-align: center;
+  margin-top: 200px;
 }
 
 .text-block {
