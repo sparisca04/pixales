@@ -253,6 +253,7 @@ height: 100%;
   max-height: 200px;
   min-height: 150px;
   background-color: #bbd4da;
+  background-size: cover;
   border-radius: 50%;
   overflow: visible;
   z-index: 1;
