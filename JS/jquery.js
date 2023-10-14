@@ -29,13 +29,15 @@ function leaveSlide(idTitulo, idPc) {
 function apareceTexto(idCirculo, idCuadro){
     var circulo = document.getElementById(idCirculo);
     var cuadro = document.getElementById(idCuadro);
-    circulo.style = "transform: translate(-80px, -85px) scale(0.6); transition: transform 500ms ease;";
+    circulo.style.transform = "translate(-80px, -85px) scale(0.6);";
+    circulo.style.transition = "transform 500ms ease;";
     cuadro.style.display = "block";
 }
 function desapareceTexto(idCirculo, idCuadro){
     var circulo = document.getElementById(idCirculo);
     var cuadro = document.getElementById(idCuadro);
-    circulo.style = "transform: translate(0px, 0px) scale(1); transition: transform 500ms ease;";
+    circulo.style.transform = "translate(0px, 0px) scale(1);";
+    circulo.style.transition = "transform 500ms ease;";
     cuadro.style.display = "none";
 }
 const slider = tns({
