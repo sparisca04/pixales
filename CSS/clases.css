@@ -328,6 +328,45 @@ border-radius: 50%;
   height: 100%;
   object-fit: cover;
 }
+.simon{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/simon.png?raw=true);
+}
+.fede{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/fede.png?raw=true);
+}
+.humberto{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/humberto.png?raw=true);
+}
+.marcelo{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/marcelo.png?raw=true);
+}
+.francisco{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/francisco.jpg?raw=true);
+}
+.eduardo{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/eduardo.png?raw=true);
+}
+.troconis{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/troconis.png?raw=true);
+}
+.dani{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/dani.png?raw=true);
+}
+.leo{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/leo.png?raw=true);
+}
+.freddy{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/freddy.png?raw=true);
+}
+.carlos{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/carlos.png?raw=true);
+}
+.sergio{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/sergio.png?raw=true);
+}
+.david{
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/david.jpg?raw=true);
+}
 
 .w-icon-slider-right:before {
   content: "►";
