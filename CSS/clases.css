@@ -199,7 +199,6 @@ td, th {
 
 .bloque {
   width: 20%;
-  height: 100px;
   padding: 20px;
   flex: 1;
 }
@@ -213,20 +212,17 @@ td, th {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  height: 230px;
 }
 .contenedor2 {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  height: 230px;
 }
 
 /* Estilos para el cuadro de texto */
 .cuadro {
 width: calc(100%);
-height: 220px;
 padding: 15px;
 background-color: #214545;
 border-radius: 20px;
@@ -240,7 +236,9 @@ border: 1px solid #214545;
 border-radius: 15px;
 padding: 10px;
 color: #214545;
-height: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
 }
 
 /* Estilos para el círculo */
