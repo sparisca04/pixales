@@ -199,6 +199,7 @@ td, th {
 
 .bloque {
   width: 20%;
+  height: max(20vw, 200px);
   padding: 20px;
   flex: 1;
 }
