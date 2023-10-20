@@ -199,7 +199,7 @@ td, th {
 
 .bloque {
   width: 20%;
-  height: max(20vw, 200px);
+  min-height: 284px;
   padding: 20px;
   flex: 1;
 }
@@ -2891,7 +2891,6 @@ figcaption {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 30px;
   display: flex;
   position: static;
   justify-content: flex-end;
