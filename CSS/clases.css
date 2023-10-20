@@ -280,6 +280,11 @@ border-radius: 50%;
   font-size: 24px;
 }
 
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
 .sub-concept {
   margin-top: 20px;
 }
@@ -3381,7 +3386,7 @@ figcaption {
 }
 
 .collection-wrap {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
