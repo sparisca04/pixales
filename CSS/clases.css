@@ -3750,7 +3750,7 @@ figcaption {
 .heading-2 {
   color: #fff;
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
   padding-left: 51px;
   font-weight: 700;
