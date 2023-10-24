@@ -85,3 +85,51 @@
         </div>
     </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Estilo para el cuadro de texto */
+#myText {
+  display: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+  max-height: 200px;
+  overflow: auto;
+}
+
+/* Estilo para centrar el botón */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+
+<!-- Contenedor del botón -->
+<div class="button-container">
+  <!-- Botón -->
+  <button onclick="myFunction()">Tema 1</button>
+</div>
+
+<!-- Cuadro de texto -->
+<div id="myText">
+  <p>Aquí puedes escribir tu texto.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
