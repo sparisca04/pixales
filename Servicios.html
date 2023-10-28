@@ -52,86 +52,85 @@
                     </a>
             </nav>
         </div>
-        <div class="concept-map">
-            <div class="concept">
-                <h1 style="font-size: 55px;">Mapa de Ruta</h1>
-                <div class="sub-concept">
-                    <div class="title-container">
-                        <button class="title-box" type="button">
-                            <h2>Brand Marketing</h2>
-                        </button>
-                        <div class="info-box"></div>
-                        <div class="info-box"></div>
-                        <div class="info-box"></div>
-                    </div>
-                    <hr class="line">
-                    <div class="title-container">
-                        <button class="title-box" type="button">
-                            <h2>Shopper Marketing</h2>
-                        </button>
-                        <div class="info-box"></div>
-                        <div class="info-box"></div>
-                        <div class="info-box"></div>
-                    </div>
-                    <hr class="line">
-                    <div class="title-container">
-                        <button class="title-box" type="button">
-                            <h2>Ventas</h2>
-                        </button>
-                        <div class="info-box"></div>
-                        <div class="info-box"></div>
-                        <div class="info-box"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
 </html>
-
-
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-/* Estilo para el cuadro de texto */
-#myText {
-  display: none;
-  padding: 10px;
-  background-color: #f1f1f1;
-  max-height: 200px;
-  overflow: auto;
-}
-
-/* Estilo para centrar el botón */
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-</style>
+    <title>Botón desplegable</title>
+    <style>
+    
+        .containerS {
+            background-color: #f9f9f9;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .botonesS {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .btn-grandeS {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 7px;
+            border: 2px solid #407271;
+            font-size: 34px;
+            margin-right: 10px;
+            position: relative;
+        }
+        .btn-grandeS:hover #cuadroS {
+            display: block;
+        }
+        #cuadroS {
+            display: none;
+            background-color: #f1f1f1;
+            padding: 10px;
+            animation: desplegarS 0.5s ease-in-out;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+        }
+        
+        @keyframes desplegarS {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Contenedor del botón -->
-<div class="button-container">
-  <!-- Botón -->
-  <button onclick="myFunction()">Tema 1</button>
-</div>
+    <div class="containerS">
+        <div class="botonesS">
+            <div class="btn-grandeS">
+                Brand Marketing
+                <div id="cuadroS">
+                    <p id="contenidoS">Información del Brand Marketing</p>
+                </div>
+            </div>
+            <div class="btn-grandeS">
+                Shopper Marketing
+                <div id="cuadroS">
+                    <p id="contenidoS">Información del Shopper Marketing</p>
+                </div>
+            </div>
+            <div class="btn-grandeS">
+                Ventas
+                <div id="cuadroS">
+                    <p id="contenidoS">Información de Ventas</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Cuadro de texto -->
-<div id="myText">
-  <p>Aquí puedes escribir tu texto.</p>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myText");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-
+  
 </body>
 </html>
