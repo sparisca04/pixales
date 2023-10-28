@@ -379,6 +379,13 @@ border-radius: 50%;
   margin: 15px 0px;
 }
 
+.persona1 {
+  visibility: hidden;
+}
+.US:hover + .persona1 {
+  visibility: visible;
+}
+
 .w-icon-slider-right:before {
   content: "►";
 }
