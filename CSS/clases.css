@@ -373,9 +373,9 @@ border-radius: 50%;
   background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/Equipo/david.jpg?raw=true);
 }
 
-.divider {
+.divider-intro {
   height: 5px;
-  width: auto;
+  width: inherit;
   background-color: #bbd4da;
   margin: 15px 0px;
 }
@@ -2703,7 +2703,7 @@ figcaption {
 }
 
 .logo-link.w--current {
-  margin-left: 100px;
+  margin-left: 4vw;
   margin-right: 0;
   padding-right: 0;
 }
@@ -2891,6 +2891,7 @@ figcaption {
   margin-bottom: 30px;
   display: flex;
   position: static;
+  flex-direction: column;
 }
 .intro-header2 {
   height: 100vh;
@@ -2923,11 +2924,11 @@ figcaption {
 }
 
 .intro-content.cc-homepage {
-  height: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   display: flex;
+  align-items: center;
 }
 
 .motto-wrap {
