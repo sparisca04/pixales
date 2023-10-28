@@ -11,6 +11,19 @@ window.onscroll = function() {
         movingText.style = "transition: transform 1.5s, ease 1s;  transform: translate3d(100px, 0px, 0px)";
         movingText.style.opacity = "0";
     }
+    
+    var logo = document.getElementById('logo');
+    var logoSmall = document.getElementById('logo-pequeño');
+    var linkLogo = document.getElementById('link-logo');
+    if(window.scrollY >= 50){
+        logo.classList.add('hidden');
+        linkLogo.classList.add('link-logo-pequeño');
+        logoSmall.classList.remove('hidden');
+    } else {
+        logo.classList.remove('hidden');
+        linkLogo.classList.remove('link-logo-pequeño');
+        logoSmall.classList.add('hidden');
+    }
 };
 
 function enterSlide(idTitulo, idPc) {
