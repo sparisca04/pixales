@@ -2169,7 +2169,12 @@ textarea.w-input, textarea.w-select {
   display: none;
   position: relative;
 }
-
+.navbar-nav-active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
 .w-nav-button:focus {
   outline: 0;
 }
@@ -2215,7 +2220,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 670px) {
   .w-nav[data-collapse="tiny"] .w-nav-menu {
     display: none;
   }
@@ -3923,6 +3928,9 @@ figcaption {
     background-color: #fff;
     justify-content: space-around;
     margin-right: 0;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
   }
 
   .cta-text {
