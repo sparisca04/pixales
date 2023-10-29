@@ -11,7 +11,8 @@ window.onscroll = function() {
         movingText.style = "transition: transform 1.5s, ease 1s;  transform: translate3d(100px, 0px, 0px)";
         movingText.style.opacity = "0";
     }
-
+};
+window.onscroll = function(){
     var logo = document.getElementById('logo');
     var logoSmall = document.getElementById('logo-pequeño');
     if(window.scrollY >= 50){
@@ -21,8 +22,7 @@ window.onscroll = function() {
         logo.classList.remove('hidden');
         logoSmall.classList.add('hidden');
     }
-};
-
+}
 function enterSlide(idTitulo, idPc) {
     var title = document.getElementById(idTitulo);
     var movingText = document.getElementById(idPc);

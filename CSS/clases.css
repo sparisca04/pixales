@@ -2844,6 +2844,7 @@ figcaption {
   margin-left: 0;
   padding-left: 0;
   display: block;
+  transition: visibility .2s ease, opacity .2s ease;
 }
 
 .navigation-items {
