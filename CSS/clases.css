@@ -404,7 +404,31 @@ border-radius: 50%;
   position: absolute;
   transition: visibility .5s ease, opacity .5s ease;
 }
-
+.container-footer {
+  width: 100%;
+  display: flex;
+  min-height: 400px;
+  background-color: #214545;
+}
+.footer {
+  padding: 5vw;
+}
+.block-footer {
+  padding: 2vw;
+}
+.block-footer-subt {
+  width: fit-content;
+}
+.footer-subt {
+  text-transform: uppercase;
+  color: white;
+  margin: 10px 0px;
+}
+.footer-divider {
+  width: auto;
+  height: 4px;
+  background-color: #bbd4da;
+}
 .w-icon-slider-right:before {
   content: "►";
 }
