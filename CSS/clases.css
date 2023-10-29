@@ -392,11 +392,7 @@ border-radius: 50%;
 .mapa-div :hover > .pais-pixales{
   fill: #214545 !important;
 }
-.mapa-div :hover ~ .persona{
-  position: fixed !important;
-  visibility: visible;
-  opacity: 1;
-}
+
 .pais-pixales {
   fill: #407271 !important;
 }
