@@ -73,3 +73,8 @@ const slider = tns({
         contenidoS.innerHTML = "Información de Ventas";
     }
 }
+
+function mostrarEnMapa() {
+    var elemento = document.getElementById("oe");
+    elemento.classList.toggle = "hidden";
+}
