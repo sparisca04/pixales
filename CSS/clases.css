@@ -394,14 +394,16 @@ border-radius: 50%;
 }
 .mapa-div :hover ~ .persona{
   position: fixed !important;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
 }
 .pais-pixales {
   fill: #407271 !important;
 }
 .persona {
   position: absolute;
+  visibility: hidden;
+  opacity: 0;
   transition: visibility .5s ease, opacity .5s ease;
 }
 .container-footer {
