@@ -380,6 +380,12 @@ border-radius: 50%;
   margin: 15px 0px;
 }
 
+.cls-1 {
+  fill: #fff;
+  opacity: 0;
+  stroke-width: 0px;
+}
+
 .w-icon-slider-right:before {
   content: "►";
 }
