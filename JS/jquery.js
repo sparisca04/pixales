@@ -23,10 +23,6 @@ window.onscroll = function() {
     }
 };
 
-function toggleMenu() {
-    var navLinks = document.getElementById('nav-items');
-    navLinks.classList.toggle('navbar-nav-active');
-}
 function enterSlide(idTitulo, idPc) {
     var title = document.getElementById(idTitulo);
     var movingText = document.getElementById(idPc);
