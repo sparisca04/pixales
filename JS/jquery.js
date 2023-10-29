@@ -1,4 +1,4 @@
-window.onscroll = function() {
+window.onscroll = function texto() {
     var movingText = document.getElementById('quienesSomos');
     var scrollPositionTop = window.scrollY;
     var scrollPositionBot = window.scrollY + window.scrollY;
@@ -12,10 +12,10 @@ window.onscroll = function() {
         movingText.style.opacity = "0";
     }
 };
-window.onscroll = function(){
+window.onscroll = function logo(){
     var logo = document.getElementById('logo');
     var logoSmall = document.getElementById('logo-pequeño');
-    if(window.scrollY >= 50){
+    if(window.scrollY >= 50 || window.innerWidth <= 500){
         logo.classList.add('hidden');
         logoSmall.classList.remove('hidden');
     } else {
