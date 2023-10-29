@@ -2200,8 +2200,22 @@ textarea.w-input, textarea.w-select {
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
   }
+
+  .navigation-items {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: max(8vw, 60px);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    padding: 0px;
+    margin-block-start: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
   .navbar-active {
-    display: block;
+    display: flex;
     opacity: 1;
     visibility: visible;
     transition: visibility .5s ease, opacity .5s ease;
