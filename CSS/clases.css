@@ -2205,7 +2205,7 @@ textarea.w-input, textarea.w-select {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: max(8vw, 60px);
+    top: max(7vw, 80px);
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -2214,7 +2214,7 @@ textarea.w-input, textarea.w-select {
     opacity: 0;
     visibility: hidden;
   }
-  .navbar-active {
+  .navbar-nav-active {
     display: flex;
     opacity: 1;
     visibility: visible;
