@@ -77,6 +77,14 @@ const slider = tns({
         contenidoS.innerHTML = "Información de Ventas";
     }
 }
+var svgElement = document.querySelector('svg'); // Identify the SVG element
+var htmlElement = document.querySelector('html'); // Identify the HTML element
+
+if (svgElement.ownerDocument === htmlElement.ownerDocument) {
+    console.log('SVG element and HTML element are in the same document.');
+} else {
+    console.log('SVG element and HTML element are not in the same document.');
+}
 function showElement(elementId) {
     document.getElementById(elementId).style.visibility = 'visible';
 }
@@ -85,4 +93,4 @@ function hideElement(elementId) {
     document.getElementById(elementId).style.visibility = 'hidden';
 }
 document.getElementById('colombia').addEventListener('mouseover', function() { showElement('persona1'); });
-document.getElementById('colombia   ').addEventListener('mouseout', function() { hideElement('persona1'); });
+document.getElementById('colombia').addEventListener('mouseout', function() { hideElement('persona1'); });
