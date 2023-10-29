@@ -390,11 +390,20 @@ border-radius: 50%;
   stroke: white;
   stroke-width: 2px;
 }
-.pais-pixales {
-  fill: #407271;
+.mapa-div :hover > .pais-pixales{
+  fill: #214545 !important;
 }
-.pais-pixales :hover {
-  fill: #214545;
+.mapa-div :hover ~ .persona{
+  position: fixed !important;
+  visibility: hidden;
+  opacity: 0;
+}
+.pais-pixales {
+  fill: #407271 !important;
+}
+.persona {
+  position: absolute;
+  transition: visibility .5s ease, opacity .5s ease;
 }
 
 .w-icon-slider-right:before {
