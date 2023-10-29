@@ -240,7 +240,6 @@ padding: 10px;
 color: #214545;
 display: flex;
 flex-direction: column;
-align-items: flex-end;
 }
 
 /* Estilos para el círculo */
