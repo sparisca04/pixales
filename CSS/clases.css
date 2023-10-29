@@ -380,10 +380,21 @@ border-radius: 50%;
   margin: 15px 0px;
 }
 
-.cls-1 {
-  fill: #fff;
-  opacity: 0;
-  stroke-width: 0px;
+.mapa-div {
+  display: flex;
+  justify-content:
+  center; margin: 60px;
+}
+.mapa-div path{
+  fill: #c0c0c0;
+  stroke: white;
+  stroke-width: 2px;
+}
+.pais-pixales {
+  fill: #407271;
+}
+.pais-pixales :hover {
+  fill: #214545;
 }
 
 .w-icon-slider-right:before {
