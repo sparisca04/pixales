@@ -285,12 +285,26 @@ border-radius: 50%;
   flex-direction: column;
   border-radius: 10px;
   background-color: #407271;
+  width: -webkit-fill-available;
+  transition: height .5s ease;
+}
+.col :hover .text-caso{
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .title-caso {
   margin-bottom: 30px;
   text-align: center;
   width: 100%;
   color: white;
+}
+.text-caso {
+  color: white;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease, visibility .5s ease;
 }
 .sub-concept {
   margin-top: 20px;
