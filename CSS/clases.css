@@ -4120,6 +4120,9 @@ figcaption {
     width: 400px;
     height: 500px;
   }
+  .col:hover {
+    height: 1100px;
+  }
   
   #chocolates {
     padding: 20px;
