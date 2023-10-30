@@ -288,6 +288,7 @@ border-radius: 50%;
   width: -webkit-fill-available;
   height: 40vw;
   transition: height .5s ease;
+  align-items: center;
 }
 .col:hover {
   background-color: #214545;
