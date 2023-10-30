@@ -286,13 +286,13 @@ border-radius: 50%;
   border-radius: 10px;
   background-color: #407271;
   width: -webkit-fill-available;
-  height: 40vw;
+  height: 430px;
   transition: height .5s ease;
   align-items: center;
 }
 .col:hover {
   background-color: #214545;
-  height: max(970px,75vw);
+  height: 1000px;
 }
 .col:hover .text-caso{
   display: block;
@@ -4109,6 +4109,16 @@ figcaption {
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    row-gap: 40px;
+  }
+
+  .col {
+    width: 400px;
+    height: 480px;
+  }
+  
+  #chocolates {
+    padding: 20px;
   }
 
   .blog-preview-wrap {
@@ -4269,6 +4279,13 @@ figcaption {
   h1 {
     font-size: 36px;
     line-height: 52px;
+  }
+
+  .col {
+    width: 300px;
+  }
+  .col:hover {
+    height: 1000px;
   }
 
   #contactanos {
