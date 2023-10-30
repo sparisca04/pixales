@@ -305,6 +305,10 @@ border-radius: 50%;
   width: 100%;
   color: white;
 }
+.subtitle-caso {
+  color: white;
+  text-align: center;
+}
 .text-caso {
   color: white;
   display: none;
@@ -4114,7 +4118,7 @@ figcaption {
 
   .col {
     width: 400px;
-    height: 480px;
+    height: 500px;
   }
   
   #chocolates {
@@ -4283,9 +4287,10 @@ figcaption {
 
   .col {
     width: 300px;
+    height: 420px;
   }
   .col:hover {
-    height: 1000px;
+    height: 1200px;
   }
 
   #contactanos {
