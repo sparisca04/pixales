@@ -286,9 +286,14 @@ border-radius: 50%;
   border-radius: 10px;
   background-color: #407271;
   width: -webkit-fill-available;
+  height: fit-content;
   transition: height .5s ease;
 }
-.col :hover .text-caso{
+.col:hover {
+  background-color: #214545;
+  height: max-content;
+}
+.col:hover .text-caso{
   display: block;
   visibility: visible;
   opacity: 1;
