@@ -29,6 +29,71 @@
                 }
                 (window,document);
         </script>
+        <style>
+    
+            .containerS {
+            background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/fondo%20servicios.jpg?raw=true);
+            background-size: cover;
+            background-position: center bottom; /* Ajuste de la posición vertical */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+                .botonesS {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                .btn-grandeS {
+                    display: inline-block;
+                    padding: 20px;
+                    border-radius: 7px;
+                    border: 2px solid #407271;
+                    font-size: 34px;
+                    margin-right: 10px;
+                    position: relative;
+                    background-color: rgba(255, 255, 255, 0.74);
+                }
+                .btn-grandeS:hover #cuadroS {
+                    display: block;
+                }
+                #contenidoS {
+            font-size: 20px; /* Tamaño de fuente más pequeño */
+            line-height: 1.8; /* Espaciado entre líneas */
+            position: relative;
+        }
+                
+                #cuadroS {
+                    display: none;
+                    background-color: #f1f1f1;
+                    padding: 10px;
+                    animation: desplegarS 0.5s ease-in-out;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    margin-top: 15px;
+                    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+                }
+                @media screen and (max-width: 1200px) {
+                    .botonesS {
+                        flex-direction: column;
+                        row-gap: 20px;
+                    }
+                }
+                
+                @keyframes desplegarS {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-10px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
     </head>
     <body class="body">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
@@ -52,116 +117,51 @@
                     </a>
             </nav>
         </div>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Botón desplegable</title>
-    <style>
-    
-    .containerS {
-    background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/fondo%20servicios.jpg?raw=true);
-    background-size: cover;
-    background-position: center bottom; /* Ajuste de la posición vertical */
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-        .botonesS {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .btn-grandeS {
-            display: inline-block;
-            padding: 20px;
-            border-radius: 7px;
-            border: 2px solid #407271;
-            font-size: 34px;
-            margin-right: 10px;
-            position: relative;
-            background-color: rgba(255, 255, 255, 0.74);
-        }
-        .btn-grandeS:hover #cuadroS {
-            display: block;
-        }
-        #contenidoS {
-    font-size: 20px; /* Tamaño de fuente más pequeño */
-    line-height: 1.8; /* Espaciado entre líneas */
-    position: relative;
-}
-        
-        #cuadroS {
-            display: none;
-            background-color: #f1f1f1;
-            padding: 10px;
-            animation: desplegarS 0.5s ease-in-out;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            margin-top: 10px;
-        }
-        
-        @keyframes desplegarS {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="containerS">
-        <div class="botonesS">
-            <div class="btn-grandeS">
-                Brand Marketing
-                <div id="cuadroS">
-                    <p id="contenidoS">• Estrategia de marca<br>• Arquitectura de marca<br>• Plan de Markenting</p>
+        <div class="containerS">
+            <div class="botonesS">
+                <div class="btn-grandeS">
+                    Brand Marketing
+                    <div id="cuadroS">
+                        <p id="contenidoS">• Estrategia de marca<br>• Arquitectura de marca<br>• Plan de Markenting</p>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-grandeS">
-                Shopper Marketing
-                <div id="cuadroS">
-                    <p id="contenidoS">• Estrategia de PDV<br>• Plan de PDV<br>• Gestion Promocional</p>
+                <div class="btn-grandeS">
+                    Shopper Marketing
+                    <div id="cuadroS">
+                        <p id="contenidoS">• Estrategia de PDV<br>• Plan de PDV<br>• Gestion Promocional</p>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-grandeS">
-                Ventas
-                <div id="cuadroS">
-                    <p id="contenidoS">• Procesos Comerciales<br>• Sistemas de incentivo<br>• Capacitación</p>
+                <div class="btn-grandeS">
+                    Ventas
+                    <div id="cuadroS">
+                        <p id="contenidoS">• Procesos Comerciales<br>• Sistemas de incentivo<br>• Capacitación</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-footer">
-        <div class="footer">
-            <div class="block-footer">
-                <div class="block-footer-subt">
-                    <h3 class="footer-subt">Contacto</h3>
-                    <div class="footer-divider"></div>
+        <div class="container-footer">
+            <div class="footer">
+                <div class="block-footer">
+                    <div class="block-footer-subt">
+                        <h3 class="footer-subt">Contacto</h3>
+                        <div class="footer-divider"></div>
+                    </div>
+                    <div class="block-footer-info">
+                        <p><strong>Teléfono:</strong> 301 618 3674</p>
+                        <p><strong>Correo:</strong> secretaria@csjgrupoinmobiliaria.com</p>
+                    </div>
                 </div>
-                <div class="block-footer-info">
-                    <p><strong>Teléfono:</strong> 301 618 3674</p>
-                    <p><strong>Correo:</strong> secretaria@csjgrupoinmobiliaria.com</p>
-                </div>
-            </div>
-            <div class="block-footer">
-                <div class="block-footer-subt">
-                    <h3 class="footer-subt">Ubicación</h3>
-                    <div class="footer-divider"></div>
-                </div>
-                <div class="block-footer-info">
-                    <p><strong>Dirección:</strong> Indiana Mall, Km 17 Via las palmas, oficina 288.</p>
+                <div class="block-footer">
+                    <div class="block-footer-subt">
+                        <h3 class="footer-subt">Ubicación</h3>
+                        <div class="footer-divider"></div>
+                    </div>
+                    <div class="block-footer-info">
+                        <p><strong>Dirección:</strong> Indiana Mall, Km 17 Via las palmas, oficina 288.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

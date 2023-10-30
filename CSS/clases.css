@@ -3910,6 +3910,7 @@ figcaption {
 }
 
 @media screen and (max-width: 1200px) {
+  
   .section.cc-cta {
     padding-left: 0;
     padding-right: 0;

@@ -53,27 +53,9 @@ function desapareceTexto(idCirculo, idCuadro){
     cuadro.style.display = "none";
 }
 const slider = tns({
-    container: '.slider',
-    items: 5, // Cuantas imagenes se quiere mostrar por pantalla
-    slideBy: 'page',
-    autoplay: true,
-    autoplayTimeout: 5000,
-  });
-  function mostrarCuadro(numeroS) {
-    var cuadroS = document.getElementById("cuadroS");
-    var contenidoS = document.getElementById("contenidoS");
-    
-    if (cuadroS.style.display === "none") {
-        cuadroS.style.display = "block";
-    } else {
-        cuadroS.style.display = "none";
-    }
-    
-    if (numeroS === 1) {
-        contenidoS.innerHTML = "Información del Brand Marketing";
-    } else if (numeroS === 2) {
-        contenidoS.innerHTML = "Información del Shopper Marketing";
-    } else if (numeroS === 3) {
-        contenidoS.innerHTML = "Información de Ventas";
-    }
-}
+        container: '.slider',
+        items: 5, // Cuantas imagenes se quiere mostrar por pantalla
+        slideBy: 'page',
+        autoplay: true,
+        autoplayTimeout: 5000,
+    });
