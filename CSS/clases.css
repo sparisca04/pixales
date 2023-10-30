@@ -4341,7 +4341,7 @@ figcaption {
 
   .navigation-wrap {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
   }
 
