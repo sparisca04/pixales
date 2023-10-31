@@ -1062,6 +1062,56 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
+.sliderH {
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+  display: flex;
+  overflow: hidden;
+}
+.slideH {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 8s linear infinite;
+}
+.slideH img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+.sliderH::before, .sliderH::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+.sliderH::before {
+  left: 0;
+  top: 0;
+}
+.sliderH::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+.container-logosS{
+  display: flex;
+  justify-content:
+  center; margin: 60px;
+}
+.texto-logos{
+  font-size: 40px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
   .contenedor{
     flex-direction: column;
