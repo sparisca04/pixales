@@ -53,15 +53,11 @@ function desapareceTexto(idCirculo, idCuadro){
     cuadro.style.display = "none";
 }
 
-function aparecePersona(id, pais){
-    var miPath = document.getElementById('miPath');
-    var otroElemento = document.getElementById('otroElemento');
-
-    miPath.addEventListener('mouseover', function() {
-    otroElemento.style.opacity = '1';
-    });
-
-    miPath.addEventListener('mouseout', function() {
-    otroElemento.style.opacity = '0';
-    });
+function aparecePersona(id){
+    var miPath = document.getElementById(id);
+    miPath.classList.add('show-persona');
+}
+function desaparecePersona(id){
+    var miPath = document.getElementById(id);
+    miPath.classList.remove('show-persona');
 }

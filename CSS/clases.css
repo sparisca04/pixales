@@ -408,7 +408,12 @@ border-radius: 50%;
   background-color: #bbd4da;
   margin: 15px 0px;
 }
-
+.nombre {
+  font-size: larger;
+  text-align: center;
+  width: 60%;
+  align-self: center;
+}
 .mapa-div {
   display: flex;
   justify-content:
@@ -422,8 +427,8 @@ border-radius: 50%;
 .pais-pixales:hover{
   fill: #214545 !important;
 }
-.pais-pixales:hover > #persona1{
-  opacity: 1;
+.show-persona {
+  opacity: 1 !important;
 }
 .pais-pixales {
   fill: #407271 !important;
