@@ -199,14 +199,17 @@ td, th {
 }
 
 .bloque {
-  width: 20%;
+  width: 300px;
   min-height: 284px;
-  padding: 20px;
-  flex: 1;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
 }
 /* Estilos para el contenedor */
 .contenedor {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .contenedor1 {
   width: 50%;
@@ -224,7 +227,6 @@ td, th {
 
 /* Estilos para el cuadro de texto */
 .cuadro {
-width: calc(100%);
 padding: 15px;
 background-color: #214545;
 border-radius: 20px;
@@ -233,24 +235,21 @@ position: relative;
 
 /* Estilos para el rectángulo interno */
 .rectangulo {
-background-color: white ;
-border: 1px solid #214545;
-border-radius: 15px;
-padding: 10px;
-color: #214545;
-display: flex;
-flex-direction: column;
+  height: 100%;
+  background-color: white ;
+  border: 1px solid #214545;
+  border-radius: 15px;
+  padding: 10px;
+  color: #214545;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Estilos para el círculo */
 .circulo-grande {
   position: absolute;
-  width: 15vw; /* Tamaño del círculo */
-  max-width: 200px;
-  min-width: 150px;
-  height: 15vw;
-  max-height: 200px;
-  min-height: 150px;
+  width: 200px; /* Tamaño del círculo */
+  height: 200px;
   background-color: #bbd4da;
   background-size: cover;
   border-radius: 50%;
@@ -420,18 +419,19 @@ border-radius: 50%;
   stroke: white;
   stroke-width: 2px;
 }
-.mapa-div :hover > .pais-pixales{
+.pais-pixales:hover{
   fill: #214545 !important;
 }
-
+.pais-pixales:hover > #persona1{
+  opacity: 1;
+}
 .pais-pixales {
   fill: #407271 !important;
 }
-.persona {
+#persona1 {
   position: absolute;
-  visibility: hidden;
   opacity: 0;
-  transition: visibility .5s ease, opacity .5s ease;
+  transition: opacity 0.3s ease;
 }
 .container-footer {
   width: 100%;
@@ -1062,30 +1062,26 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
-.sliderH {
-  width: 1000px;
-  height: 100px;
-  position: relative;
-  background: white;
-  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
-  display: flex;
+.container-logosS{
+  width: 75%;
+  justify-content: center;
+  height: auto;
+  margin: 60px auto;
   overflow: hidden;
 }
-.slideH {
-  height: 100px;
+.container-logosS .sliderH {
   display: flex;
-  align-items: center;
-  animation: slideshow 8s linear infinite;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(150px * 14);
 }
-.slideH img {
-  height: 70px;
-  padding: 0 30px 0 30px;
+.container-logosS .slideH {
+  width: 150px;
 }
-@keyframes slideshow {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-100%);}
+.container-logosS .slideH img{
+  width: 100%;
 }
-.sliderH::before, .sliderH::after {
+.container-logosS::before, .container-logosS::after {
   height: 100px;
   width: 200px;
   position: absolute;
@@ -1093,19 +1089,24 @@ textarea.w-input, textarea.w-select {
   background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
   z-index: 2;
 }
-.sliderH::before {
+.container-logosS::before {
   left: 0;
   top: 0;
 }
-.sliderH::after {
+.container-logosS::after {
   right:0;
   top:0;
   transform: rotateZ(180deg);
 }
-.container-logosS{
-  display: flex;
-  justify-content:
-  center; margin: 60px;
+@keyframes scroll {
+  0%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(calc(-150px * 7));
+    transform: translateX(-150px * 7);
+  }
 }
 .texto-logos{
   font-size: 40px;
@@ -1113,21 +1114,6 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 1200px) {
-  .contenedor{
-    flex-direction: column;
-  }
-  .contenedor1{
-    width: 100%;
-    padding-left: 5vw;
-  }
-  .contenedor2{
-    width: 100%;
-    padding-left: 5vw;
-  }
-  .bloque{
-    width: 40%;
-  }
-
   .w-container {
     max-width: 728px;
   }
@@ -3548,6 +3534,7 @@ figcaption {
   position: fixed !important;
   visibility: hidden;
   opacity: 0;
+  animation: changeLogo .3s ;
 }
 
 .collection-wrap {
@@ -3607,7 +3594,6 @@ figcaption {
   color: #407271;
   background-color: #fff;
   border: 0 #000;
-  font-weight: 700;
 }
 
 .background-video {
@@ -3762,7 +3748,7 @@ figcaption {
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2.3vw;
+  font-size: max(2.3vw,16px);
   display: flex;
   padding-left: 78px;
   padding-right: 78px;
@@ -4003,7 +3989,7 @@ figcaption {
 
   .menu {
     margin-left: 0;
-    padding-right: 130px;
+    margin-right: 4vw;
     position: static;
   }
 

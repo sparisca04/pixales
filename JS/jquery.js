@@ -43,7 +43,7 @@ function leaveSlide(idTitulo, idPc) {
 function apareceTexto(idCirculo, idCuadro){
     var circulo = document.getElementById(idCirculo);
     var cuadro = document.getElementById(idCuadro);
-    circulo.style = "transform: translate(-80px, -85px) scale(0.6); transition: transform 500ms ease;";
+    circulo.style = "transform: translate(-140px, -85px) scale(0.6); transition: transform 500ms ease;";
     cuadro.style.display = "block";
 }
 function desapareceTexto(idCirculo, idCuadro){
@@ -53,3 +53,15 @@ function desapareceTexto(idCirculo, idCuadro){
     cuadro.style.display = "none";
 }
 
+function aparecePersona(id, pais){
+    var miPath = document.getElementById('miPath');
+    var otroElemento = document.getElementById('otroElemento');
+
+    miPath.addEventListener('mouseover', function() {
+    otroElemento.style.opacity = '1';
+    });
+
+    miPath.addEventListener('mouseout', function() {
+    otroElemento.style.opacity = '0';
+    });
+}
