@@ -53,11 +53,15 @@ function desapareceTexto(idCirculo, idCuadro){
     cuadro.style.display = "none";
 }
 
-function aparecePersona(id){
-    var miPath = document.getElementById(id);
-    miPath.classList.add('show-persona');
+function aparecePersona(clase){
+    var personas = document.getElementsByClassName(clase);
+    for (let index = 0; index < personas.length; index++) {
+        personas[index].classList.add('show-persona');
+    }
 }
-function desaparecePersona(id){
-    var miPath = document.getElementById(id);
-    miPath.classList.remove('show-persona');
+function desaparecePersona(clase){
+    var personas = document.getElementsByClassName(clase);
+    for (let index = 0; index < personas.length; index++) {
+        personas[index].classList.remove('show-persona');
+    }
 }

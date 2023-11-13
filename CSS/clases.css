@@ -197,7 +197,15 @@ td, th {
   line-height: 1;
   font-family: webflow-icons !important;
 }
-
+.fondo-equipo {
+  background-color: #407271;
+  padding-bottom: 25px;
+}
+.fondo-equipo .heading-2 {
+  text-shadow: 7px 4px 14px black;
+  padding: 50px;
+  width: fit-content;
+}
 .bloque {
   width: 300px;
   min-height: 284px;
@@ -404,7 +412,7 @@ border-radius: 50%;
 
 .divider-intro {
   height: 5px;
-  width: inherit;
+  width: 100%;
   background-color: #bbd4da;
   margin: 15px 0px;
 }
@@ -416,8 +424,8 @@ border-radius: 50%;
 }
 .mapa-div {
   display: flex;
-  justify-content:
-  center; margin: 60px;
+  justify-content: center;
+  margin: 50px auto;
 }
 .mapa-div path{
   fill: #c0c0c0;
@@ -433,10 +441,18 @@ border-radius: 50%;
 .pais-pixales {
   fill: #407271 !important;
 }
-#persona1 {
+.circulo-mapa {
   position: absolute;
+  width: 8vw; /* Tamaño del círculo */
+  height: 8vw;
+  background-color: #bbd4da;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: visible;
+  z-index: 1;
+  transition: width 400ms, height 400ms;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 .container-footer {
   width: 100%;
@@ -3909,8 +3925,9 @@ figcaption {
   align-self: flex-start;
   margin-top: 0px;
   margin-bottom: 0;
-  padding-left: 51px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .heading-3 {
