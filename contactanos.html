@@ -6,7 +6,7 @@
 					background-image: url('https://github.com/sparisca04/pixales/blob/main/Imagenes/Logo_completo-removebg-preview.png?raw=true');
 					background-repeat: no-repeat;
 					background-attachment: fixed;
-					background-position: center 200px; 
+					background-position: center 40%; 
 					background-size: 80%; 
 					margin-top: 100px !important;
 					font-size: 16px;
@@ -50,6 +50,8 @@
 				input[type="submit"] {
 					background-color: #214545;
 					color: #fff;
+					margin: 20px 0px;
+					width: 100%;
 					border: none;
 					border-radius: 5px;
 					padding: 10px 20px;
@@ -112,16 +114,23 @@
 					</a>
 			</nav>
 		</div>
-		<h1>Enviar correo</h1>
-		<form action="mailto:info@pixales.net" method="post" enctype="text/plain">
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" required>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-			<label for="mensaje">Mensaje:</label>
-			<textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-			<input type="submit" value="Enviar">
-		</form>
+		<div style="padding: 30px; padding-bottom: 60px">
+			<div class="blog-heading-container">
+				<div class="blog-heading">
+					<h2 class="heading-2">Enviar Correo</h2>
+					<div class="divider-intro"></div>
+				</div>
+			</div>
+			<form action="mailto:info@pixales.net" method="post" enctype="text/plain">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
 		<div class="container-footer">
 			<div class="footer">
 				<div class="block-footer">
