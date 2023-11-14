@@ -288,7 +288,6 @@ border-radius: 50%;
 }
 
 .blog-heading .heading-2 {
-  margin: 40px 0px;
   color: #214545;
   width: fit-content;
 }
@@ -482,11 +481,11 @@ border-radius: 50%;
 }
 .block-footer-subt {
   width: fit-content;
+  margin: 20px 0px;
 }
 .footer-subt {
   text-transform: uppercase;
   color: white;
-  margin: 10px 0px;
 }
 .footer-divider {
   width: auto;
