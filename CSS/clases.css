@@ -3806,7 +3806,7 @@ figcaption {
   opacity: 1;
   mix-blend-mode: normal;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("https://uploads-ssl.webflow.com/64cbdd69893aacb3e3a8fe68/64d3b8660746968851caf096_oportunidad.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("https://uploads-ssl.webflow.com/64cbdd69893aacb3e3a8fe68/64d3b8660746968851caf096_oportunidad.jpg");
   background-size: cover;
 }
 
@@ -3868,6 +3868,7 @@ figcaption {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 7vw;
+  font-weight: 600;
   display: flex;
   position: absolute;
   top: 0%;
