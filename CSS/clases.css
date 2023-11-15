@@ -3091,6 +3091,7 @@ figcaption {
 }
 
 .intro-content {
+  max-width: 70%;
   text-align: center;
 }
 
