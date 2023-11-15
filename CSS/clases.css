@@ -197,6 +197,11 @@ td, th {
   line-height: 1;
   font-family: webflow-icons !important;
 }
+
+#contactanos-dd {
+  display: none;
+  margin-bottom: 20px;
+}
 .fondo-equipo {
   background-color: #407271;
   padding-bottom: 25px;
@@ -2359,6 +2364,9 @@ textarea.w-input, textarea.w-select {
   .w-nav[data-collapse="tiny"] .w-nav-button {
     display: block;
   }
+  #contactanos-dd {
+    display: block;
+  }
 }
 
 .w-tabs {
@@ -2716,6 +2724,7 @@ figcaption {
   border-radius: 20px;
   margin-left: 0;
   position: relative;
+  text-align: center;
 }
 
 .button.cc-white-button {
@@ -3050,6 +3059,7 @@ figcaption {
   background-attachment: scroll, fixed;
   justify-content: center;
   align-items: center;
+  padding: 0px 40px;
   margin-top: 0;
   margin-bottom: 30px;
   display: flex;
@@ -3081,7 +3091,6 @@ figcaption {
 }
 
 .intro-content {
-  max-width: 70%;
   text-align: center;
 }
 
@@ -3983,8 +3992,71 @@ figcaption {
   margin-right: auto;
 }
 
+.containerS {
+  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/fondo%20servicios.jpg?raw=true);
+  background-size: cover;
+  background-position: center bottom; /* Ajuste de la posición vertical */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botonesS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btn-grandeS {
+    display: flex;
+    width: -webkit-fill-available;
+    line-height: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 7px;
+    border: 2px solid #407271;
+    font-size: 34px;
+    margin-right: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.74);
+}
+.btn-grandeS:hover #cuadroS {
+    display: block;
+}
+#contenidoS {
+  font-size: 20px; /* Tamaño de fuente más pequeño */
+  line-height: 1.8; /* Espaciado entre líneas */
+  position: relative;
+}
+#cuadroS {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    animation: desplegarS 0.5s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+@keyframes desplegarS {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}     
+
 @media screen and (max-width: 1200px) {
-  
+  .botonesS {
+    flex-direction: column;
+    row-gap: 20px;
+}
   .section.cc-cta {
     padding-left: 0;
     padding-right: 0;
@@ -4272,10 +4344,6 @@ figcaption {
     padding-right: 30px;
   }
 
-  .intro-content {
-    width: 80%;
-  }
-
   .our-services-grid {
     grid-row-gap: 60px;
     grid-template: "."
@@ -4356,6 +4424,10 @@ figcaption {
   h1 {
     font-size: 36px;
     line-height: 52px;
+  }
+
+  .btn-grandeS{
+    width: 220px;
   }
 
   .col {
