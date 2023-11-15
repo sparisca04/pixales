@@ -1134,7 +1134,7 @@ textarea.w-input, textarea.w-select {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-  100%{
+  75%{
     -webkit-transform: translateX(calc(-150px * 7));
     transform: translateX(-150px * 7);
   }
