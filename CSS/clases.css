@@ -3993,7 +3993,7 @@ figcaption {
 }
 
 .containerS {
-  background-image: url(https://github.com/sparisca04/pixales/blob/main/Imagenes/fondo%20servicios.jpg?raw=true);
+  background-image: linear-gradient(rgb(0, 0, 0, .4), rgb(0, 0, 0, .8)), url(https://github.com/sparisca04/pixales/blob/main/Imagenes/fondo3-servicios.jpg?raw=true);
   background-size: cover;
   background-position: center bottom; /* Ajuste de la posición vertical */
   height: 100vh;
@@ -4477,7 +4477,6 @@ figcaption {
   }
 
   .menu {
-    margin-left: 50px;
     padding-right: 0;
   }
 
