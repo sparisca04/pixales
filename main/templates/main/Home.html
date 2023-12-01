@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="w-mod-js wf-montserrat-n6-active wf-montserrat-n7-active wf-montserrat-n5-active wf-montserrat-n2-active wf-montserrat-n9-active wf-montserrat-n1-active wf-montserrat-n8-active wf-montserrat-n4-active wf-montserrat-n3-active wf-montserrat-i6-active wf-montserrat-i2-active wf-montserrat-i5-active wf-montserrat-i8-active wf-montserrat-i1-active wf-montserrat-i7-active wf-montserrat-i4-active wf-montserrat-i3-active wf-montserrat-i9-active wf-active w-mod-ix">
     <head>
         <style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
         <meta charset="utf-8">
         <title>Pixales - Consultora de alto nivel</title>
-        <link rel="shortcut icon" href="https://github.com/sparisca04/pixales/blob/main/Imagenes/Logo%20x.png?raw=true">
+        <link rel="shortcut icon" href="{% static 'Imagenes/Logo x.png' %}">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta content="Business - Webflow HTML website template" property="og:title">
         <meta content="https://uploads-ssl.webflow.com/5c6eb5400253230156de2bd6/5cdc268dd7274d5c05c6009a_Business%20SEO.jpg" property="og:image">
         <meta content="Business - Webflow HTML website template" property="twitter:title">
         <meta content="https://uploads-ssl.webflow.com/5c6eb5400253230156de2bd6/5cdc268dd7274d5c05c6009a_Business%20SEO.jpg" property="twitter:image">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link href="https://sparisca04.github.io/pixales/CSS/clases.css" rel="stylesheet" type="text/css">
+        <link href="{% static 'CSS/clases.css' %}" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com" rel="preconnect">
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-        <script src="https://sparisca04.github.io/pixales/JS/jquery.js" type="text/javascript"></script>
+        <script src="{% static 'JS/jquery.js' %}" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" media="all">
         <script type="text/javascript">
@@ -37,22 +38,22 @@
                 <nav class="navigation-wrap">
                     <nav class="menu">
                         <nav role="navigation" class="navigation-items" id="nav-items">
-                            <a href="https://sparisca04.github.io/pixales/Conocenos.html" class="navigation-item w-nav-link">¡Conócenos!</a>
-                            <a href="https://sparisca04.github.io/pixales/Servicios.html" class="navigation-item w-nav-link">servicios</a>
-                            <a href="https://sparisca04.github.io/pixales/Casos_de_Exito.html" class="navigation-item w-nav-link">casos de éxito</a>
-                            <a href="https://sparisca04.github.io/pixales/contactanos.html" class="button cc-contact-us w-inline-block" id="contactanos-dd">
+                            <a href="/conocenos" class="navigation-item w-nav-link">¡Conócenos!</a>
+                            <a href="/servicios" class="navigation-item w-nav-link">servicios</a>
+                            <a href="/casos_de_exito" class="navigation-item w-nav-link">casos de éxito</a>
+                            <a href="/contactanos" class="button cc-contact-us w-inline-block" id="contactanos-dd">
                                 <div>Contáctanos</div>
                             </a>
                         </nav>
                         <div onclick="toggleMenu()" class="menu-button w-nav-button" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-                            <img src="https://raw.githubusercontent.com/sparisca04/Pixales-code/main/Imagenes/menu%20icon.webp?token=GHSAT0AAAAAACGPLY23QEHE7DWGYCRXNGOKZHODOGQ" width="67" alt="" class="menu-icon">
+                            <img src="{% static 'Imagenes/menu icon.webp' %}" width="67" alt="" class="menu-icon">
                         </div>
                     </nav>
-                    <a href="https://sparisca04.github.io/pixales/Home.html" aria-current="page" class="logo-link w-nav-brand w--current" aria-label="home">
-                        <img src="https://github.com/sparisca04/pixales/blob/main/Imagenes/Logo%20completo.png?raw=true" width="67" alt="" class="logo-image" style="height: 60px;width: auto;" id="logo">
-                        <img src="https://github.com/sparisca04/pixales/blob/main/Imagenes/Logo%20x.png?raw=true" width="67" alt="" class="logo-image hidden" id="logo-pequeño">
+                    <a href="/" aria-current="page" class="logo-link w-nav-brand w--current" aria-label="home">
+                        <img src="{% static 'Imagenes/Logo completo.png' %}" width="67" alt="" class="logo-image" style="height: 60px;width: auto;" id="logo">
+                        <img src="{% static 'Imagenes/Logo x.png' %}" width="67" alt="" class="logo-image hidden" id="logo-pequeño">
                     </a>
-                        <a href="https://sparisca04.github.io/pixales/contactanos.html" class="button cc-contact-us w-inline-block" id="contactanos">
+                        <a href="/contactanos" class="button cc-contact-us w-inline-block" id="contactanos">
                             <div>Contáctanos</div>
                         </a>
                 </nav>
@@ -63,7 +64,7 @@
                         <div class="intro-text">CONSULTORA DE ALTO IMPACTO</div>
                         <div class="divider-intro"></div>
                     </div>
-                    <a href="https://sparisca04.github.io/pixales/Servicios.html" class="button cc-contact-us w-inline-block" id="conoce-servicios">
+                    <a href="/servicios" class="button cc-contact-us w-inline-block" id="conoce-servicios">
                         <div>Conoce nuestros servicios</div>
                     </a>
                 </div>
@@ -109,7 +110,7 @@
                     <div class="divider"></div>
                     <div class="home-content-wrap">
                         <div class="w-layout-grid about-grid cc-about-2">
-                            <img src="https://raw.githubusercontent.com/sparisca04/pixales/main/Imagenes/quienes%20somos.jpg" alt="">    
+                            <img src="{% static 'Imagenes/quienes somos.jpg' %} %}" alt="">    
                             <div id="w-node-_86e64837-0616-515b-4568-76c147234d41-e3a8ff0a">
                                 <div class="home-section-wrap">
                                     <h2 class="section-heading">¿Quiénes somos?</h2>
@@ -117,7 +118,7 @@
                                         Un <strong>equipo</strong> que viene de la <strong>calle</strong>, comprometido con los <strong>RESULTADOS de nuestros CLIENTES</strong>, dispuesto a brindar acompañamiento continuo <strong>hasta que se alcancen las METAS</strong>.
                                     </p>
                                 </div>
-                                <a href="https://sparisca04.github.io/pixales/Conocenos.html" class="button cc-contact-us w-inline-block">
+                                <a href="/conocenos" class="button cc-contact-us w-inline-block">
                                     <div>!Conócenos!</div>
                                 </a>
                             </div>
