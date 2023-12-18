@@ -297,7 +297,8 @@ border-radius: 50%;
   width: fit-content;
 }
 .col{
-  display: flex;
+  display: none;
+  opacity: 0;
   flex-direction: column;
   border-radius: 10px;
   background-color: #407271;
@@ -306,6 +307,10 @@ border-radius: 50%;
   transition: height .5s ease;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  text-decoration: none;
+  width: 25%;
+  min-width: 240px;
 }
 .col:hover {
   background-color: #214545;
@@ -316,6 +321,24 @@ border-radius: 50%;
   display: block;
   animation: scrolear 0.5s;
 }
+.slide1, .slide2, .slide3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  transform: translateX(-50%);
+  transition: left 0.5s;
+}
+.slide1 {
+  left: 20%;
+}
+.slide2 {
+  left: 50%;
+}
+.slide3 {
+  left: 80%;
+}
+
 @keyframes scrolear {
   0% {
     transform: translateY(-80%);
@@ -459,6 +482,32 @@ border-radius: 50%;
   width: auto;
   height: 4px;
   background-color: #bbd4da;
+}
+.sliderCE {
+  padding: 0px 40px;
+  margin-bottom: 520px;
+}
+.prev,
+.next {
+  align-self: center;
+  left: 30px;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  font-weight: bold;
+  font-size: max(4vw, 30px);
+  border-radius: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+.next {
+  right: 30px;
+  left: auto;
+}
+.prev:hover,
+.next:hover {
+  color: #bbd4da;
 }
 .w-icon-slider-right:before {
   content: "►";
@@ -2615,11 +2664,7 @@ figcaption {
 
 .container {
   width: 100%;
-  max-width: 1140px;
   margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
 }
 
 .paragraph-tiny {
@@ -3488,6 +3533,7 @@ figcaption {
 .home-content-wrap {
   margin-top: 0;
   margin-bottom: 80px;
+  margin-right: 50px;
 }
 
 .home-section-wrap {
@@ -3541,6 +3587,7 @@ figcaption {
   align-items: flex-start;
   display: flex;
   column-gap: 20px;
+  height: 500px;
 }
 
 .work-heading {
@@ -4013,10 +4060,14 @@ figcaption {
 }     
 
 @media screen and (max-width: 1200px) {
+  .home-content-wrap {
+    margin-right: 0px;
+  }
+
   .botonesS {
     flex-direction: column;
     row-gap: 20px;
-}
+  }
   .section.cc-cta {
     padding-left: 0;
     padding-right: 0;
@@ -4221,22 +4272,27 @@ figcaption {
     margin-left: 20px;
     margin-right: 20px;
     row-gap: 40px;
+    height: unset;
   }
-
+  .prev, .next {
+    display: none;
+  }
+  .slide1, .slide2, .slide3 {
+    left: unset;
+    transform: translateX(0%);
+  }
   .col {
+    position: relative;
     width: 400px;
-    height: 500px;
+    height: 540px;
+    display: flex;
+    opacity: 1;
   }
   .col:hover {
     height: 1100px;
   }
-  
-  #chocolates {
-    padding: 20px;
-  }
 
   .blog-preview-wrap {
-    width: 80%;
     text-align: center;
     padding-right: 15px;
   }

@@ -32,6 +32,8 @@
             }
             (window,document);
         </script>
+        <style>
+        </style>
     </head>
     <body class="body">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
@@ -66,12 +68,12 @@
                         <div class="divider-intro"></div>
                     </div>
                 </div>
-                <div class="collection-list-wrapper w-dyn-list">
+                <div class="sliderCE">
                     <div role="list" class="collection-wrap w-dyn-items">
                         {% for casoDeExito in casosDeExito%}
                         <div class="col">
                             <h2 class="title-caso">{{casoDeExito.nombre}}</h2>
-                            <div>
+                            <div style="display: flex; flex-direction: column; padding: 0px 25px; width: 100%;">
                                 <img style="padding: 20px; z-index: 2;" src="{{casoDeExito.imagen.url}}">
                                 <div class="blog-preview-wrap w-dyn-item">
                                     <p class="subtitle-caso"><b>{{casoDeExito.ubicacion}}</b>
@@ -87,7 +89,39 @@
                             </div>
                         </div>
                         {% endfor %}
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
+                    <script>
+                        let slideIndex = 0;
+                        showSlides(slideIndex);
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("col");
+                            if (n >= slides.length) {slideIndex = 0}
+                            if (n < 0) {slideIndex = slides.length-1}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].classList.remove('slide1');
+                                slides[i].classList.remove('slide2'); 
+                                slides[i].classList.remove('slide3'); 
+                            }
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            slides[slideIndex].classList.add('slide1');
+                            if (slideIndex == slides.length-2) {
+                                slides[slideIndex+1].classList.add('slide2');
+                                slides[0].classList.add('slide3');
+                            } else if (slideIndex == slides.length-1) {
+                                slides[0].classList.add('slide2');
+                                slides[1].classList.add('slide3');
+                            } else {
+                                slides[slideIndex+1].classList.add('slide2');
+                                slides[slideIndex+2].classList.add('slide3');
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
