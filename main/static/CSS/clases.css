@@ -2627,7 +2627,7 @@ figcaption {
 }
 
 .divider {
-  height: 1px;
+  height: 2px;
   background-color: #eee;
 }
 
@@ -3553,7 +3553,6 @@ figcaption {
   grid-template: ". ."
   / 1fr 2fr;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 .about-grid.cc-about-2 {
@@ -4006,16 +4005,20 @@ figcaption {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .botonesS {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  row-gap: 100px;
+  padding: 0px 40px;
 }
 .btn-grandeS {
     display: flex;
-    width: -webkit-fill-available;
+    width: 300px;
+    height: 112px;
     line-height: 1;
     text-align: center;
     align-items: center;

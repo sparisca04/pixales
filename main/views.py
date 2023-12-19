@@ -1,6 +1,6 @@
 from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render, get_object_or_404
-from .models import Miembro, CasoDeExito
+from .models import Miembro, CasoDeExito, Servicio
 
 # Create your views here.
 
@@ -12,7 +12,8 @@ def conocenos(request):
     return render(request, "main/Conocenos.html", {'miembros': miembros})
 
 def servicios(request):
-    return render(request, "main/Servicios.html")
+    servicios = Servicio.objects.all
+    return render(request, "main/Servicios.html", {'servicios': servicios})
 
 def casosDeExito(request):
     casosDeExito = CasoDeExito.objects.all

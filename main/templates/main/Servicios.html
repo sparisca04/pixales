@@ -64,25 +64,25 @@
             </nav>
         </div>
         <div class="containerS bg-containerS">
+            <div class="intro-content cc-homepage">
+                <div class="intro-text">NUESTROS SERVICIOS</div>
+                <div class="divider-intro"></div>
+            </div>
             <div class="botonesS">
+                {% for servicio in servicios %}
                 <div class="btn-grandeS">
-                    Brand Marketing
+                    {{servicio.nombre}}
                     <div id="cuadroS">
-                        <p id="contenidoS">• Estrategia de marca<br>• Arquitectura de marca<br>• Plan de Markenting</p>
+                        <p id="contenidoS">• {{servicio.descripcion1}}</p>
+                        {% if servicio.descripcion2 %}
+                        <p id="contenidoS">• {{servicio.descripcion2}}</p>
+                        {% endif %}
+                        {% if servicio.descripcion3 %}
+                        <p id="contenidoS">• {{servicio.descripcion3}}</p>
+                        {% endif %}
                     </div>
                 </div>
-                <div class="btn-grandeS">
-                    Shopper Marketing
-                    <div id="cuadroS">
-                        <p id="contenidoS">• Estrategia de PDV<br>• Plan de PDV<br>• Gestion Promocional</p>
-                    </div>
-                </div>
-                <div class="btn-grandeS">
-                    Ventas
-                    <div id="cuadroS">
-                        <p id="contenidoS">• Procesos Comerciales<br>• Sistemas de incentivo<br>• Capacitación</p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
 
